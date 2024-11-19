@@ -1,3 +1,6 @@
+/* Importación de fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Sacramento&family=Arial&display=swap');
+
 /* Estilos comunes */
 body {
     font-family: Arial, sans-serif;
@@ -11,6 +14,37 @@ h1 {
     font-size: 3em;
 }
 
+/* Estilos para la página rosa (PAGINA1) */
+.rosa {
+    background-color: #FFC0CB;
+}
+
+.cursive {
+    font-family: 'Cursive', sans-serif;
+}
+
+/* Estilos para la página fucsia (PAGINA2) */
+.fucsia {
+    background-color: #FF00FF;
+}
+
+.lora {
+    font-family: 'Lora', serif;
+}
+
+/* Estilos para la página roja (PAGINA3) */
+.rojo {
+    background-color: #FF0000;
+}
+
+.kawaii {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    color: white;
+    font-style: italic;
+}
+
+/* Estilo de los botones */
 .botones {
     margin-top: 20px;
 }
@@ -27,33 +61,45 @@ h1 {
     background-color: #ccc;
 }
 
-/* Estilos de la página rosa (PAGINA1) */
-.rosa {
-    background-color: #FFC0CB;
+/* Estilo de las imágenes en la galería */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
-.cursive {
-    font-family: 'Cursive', sans-serif;
+.imagen {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
 }
 
-/* Estilos de la página fucsia (PAGINA2) */
-.fucsia {
-    background-color: #FF00FF;
+.imagen:hover {
+    transform: scale(1.1);
 }
 
-.lora {
-    font-family: 'Lora', serif;
+/* Estilo de la tabla */
+.tabla {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
 }
 
-/* Estilos de la página roja (PAGINA3) */
-.rojo {
-    background-color: #FF0000;
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
 }
 
-.kawaii {
-    font-family: 'Arial', sans-serif;
-    font-size: 2.5em;
-    color: white;
+thead th {
+    font-weight: bold;
+    animation: headerAnimation 1s ease-in-out infinite alternate;
+}
+
+/* Animación de los encabezados */
+@keyframes headerAnimation {
+    0% { background-color: #ffdd57; }
+    100% { background-color: #ff6347; }
 }
 
 /* Estilo de las imágenes en la galería */

@@ -31,6 +31,48 @@ function cambiarImagen(img, src) {
 function restaurarImagen(img, src) {
     img.src = src;
 }
+// Función para realizar las operaciones matemáticas
+function realizarOperacion(operacion) {
+    let resultado = 0;
+    let num1, num2, num3;
+
+    switch (operacion) {
+        case 'multiplicacion':
+            // Obtener los valores de los campos de entrada
+            num1 = parseFloat(document.getElementById('num1').value);
+            num2 = parseFloat(document.getElementById('num2').value);
+            if (isNaN(num1) || isNaN(num2)) {
+                alert('Por favor ingresa dos números válidos para la multiplicación.');
+                return;
+            }
+            resultado = num1 * num2;
+            break;
+
+        case 'exponente':
+            // Obtener el valor del campo de entrada
+            num3 = parseFloat(document.getElementById('num3').value);
+            if (isNaN(num3)) {
+                alert('Por favor ingresa un número válido para elevar al cuadrado.');
+                return;
+            }
+            resultado = Math.pow(num3, 2); // Elevar al cuadrado
+            break;
+
+        case 'resta':
+            // Obtener los valores de los campos de entrada
+            num1 = parseFloat(document.getElementById('num4').value);
+            num2 = parseFloat(document.getElementById('num5').value);
+            if (isNaN(num1) || isNaN(num2)) {
+                alert('Por favor ingresa dos números válidos para la resta.');
+                return;
+            }
+            resultado = num1 - num2;
+            break;
+    }
+
+    // Mostrar el resultado en la página
+    document.getElementById('scriptMessage').innerHTML = `El resultado de la operación es: ${resultado}`;
+}
 
 // Función para mostrar mensaje de script en la página de la tabla (PAGINA3)
 function mostrarScript(operacion) {
