@@ -1,0 +1,98 @@
+/* Estilos comunes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+.boton {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #ccc;
+}
+
+/* Estilos de la página rosa (PAGINA1) */
+.rosa {
+    background-color: #FFC0CB;
+}
+
+.cursive {
+    font-family: 'Cursive', sans-serif;
+}
+
+/* Estilos de la página fucsia (PAGINA2) */
+.fucsia {
+    background-color: #FF00FF;
+}
+
+.lora {
+    font-family: 'Lora', serif;
+}
+
+/* Estilos de la página roja (PAGINA3) */
+.rojo {
+    background-color: #FF0000;
+}
+
+.kawaii {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    color: white;
+}
+
+/* Estilo de las imágenes en la galería */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imagen {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.imagen:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo de la tabla */
+.tabla {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+thead th {
+    font-weight: bold;
+    animation: headerAnimation 1s ease-in-out infinite alternate;
+}
+
+/* Animación de los encabezados */
+@keyframes headerAnimation {
+    0% { background-color: #ffdd57; }
+    100% { background-color: #ff6347; }
+}

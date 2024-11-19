@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="rosa">
+    <div class="contenido">
+        <h1 class="cursive">Bienvenido a la Página Principal</h1>
+        <p>Esta página contiene botones para acceder a otras páginas de este sitio.</p>
+        <p>Por favor, ingresa tu nombre para que podamos saludarte:</p>
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
+        <button onclick="saludar()">Saludar</button>
+
+        <div id="mensajeBienvenida"></div>
+
+        <div class="botones">
+            <button class="boton" onclick="location.href='galeria.html'">Ir a Galería</button>
+            <button class="boton" onclick="location.href='tabla.html'">Ir a Tabla</button>
+            <button class="boton">Más Información</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

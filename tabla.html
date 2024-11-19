@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Matemáticas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="rojo">
+    <div class="contenido">
+        <h1 class="kawaii">Tabla de Operaciones Matemáticas</h1>
+        
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>OPERACIÓN</th>
+                    <th>DESCRIPCIÓN</th>
+                    <th>BOTONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MULTIPLICACIÓN</td>
+                    <td>Multiplica 2 números ingresados</td>
+                    <td><button onclick="mostrarScript('multiplicacion')">Realizar</button></td>
+                </tr>
+                <tr>
+                    <td>EXPONENTE 2</td>
+                    <td>Eleva al cuadrado 1 número ingresado</td>
+                    <td><button onclick="mostrarScript('exponente')">Realizar</button></td>
+                </tr>
+                <tr>
+                    <td>RESTA</td>
+                    <td>Resta 2 números ingresados</td>
+                    <td><button onclick="mostrarScript('resta')">Realizar</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="scriptMessage"></div>
+
+        <div class="botones">
+            <button class="boton" onclick="location.href='index.html'">Volver a Página Principal</button>
+            <button class="boton" onclick="location.href='galeria.html'">Ir a Galería</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
